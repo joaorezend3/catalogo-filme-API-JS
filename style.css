@@ -1,9 +1,13 @@
+/* font html */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* font h2 */
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 :root {
   --color-black: rgb(0, 0, 0);
-  --color-white: rgb(255, 255, 255);
-  --color-red: #e30914;
-  --color-darkblue: #23232e;
-  --color-white-smoke: #eee;
+  --color-white: rgb(255, 255, 255);  
+  --color-blue-dark: #030328;
+  --color-blue-dark2:02021;
+  --color-purple:#b535f6:
   --color-green: rgb(0, 255, 55);
   --color-orange: rgb(255, 68, 0);
   --color--red: rgb(255, 0, 0);
@@ -142,14 +146,16 @@ p,
 samp {
   color: var(--color-white);
 }
+h2{    font-family: 'Patua One', cursive;
+
+}
 li {
   list-style: none;
 }
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-
-html {
+html 
+{
   font-family: "Roboto Mono", monospace;
-  background: rgba(0, 0, 0, 0.925);
+  background: var(--color-blue-dark);
   width: 100%;
 }
 
@@ -165,7 +171,7 @@ header {
   justify-content: flex-end;
   display: flex;
   align-items: center;
-  background: var(--color-darkblue);
+  background: #02021c;
   padding: 30px 20px;
   left: 0;
   right: 0;
@@ -174,7 +180,8 @@ header {
 }
 header.active {
   height: 0.8vh;
-  /* box-shadow: 0px 0px 3px rgb(197, 197, 197); */
+  background: #02021cd3;
+  box-shadow: 0px 0px 3px  #00002bd3;
 }
 nav {
   display: flex;
@@ -183,25 +190,24 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 a.logo {
+  color: #b535f6;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-right: auto;
   display: flex;
   text-align: start;
   justify-content: flex-start;
   font-size: 45px;
-  background: linear-gradient(to right, #00c8ff, #eee, #c4ffd5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: none;
   transition: all linear 0.45s;
 }
 a.logo:hover {
   transition: 0.4s;
-  background: linear-gradient(to right, #00c8ff, #c4ffd5);
+  background: linear-gradient(to bottom, #aa00ff, #7800b4, #630094);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 header.active a.logo {
-  background: linear-gradient(to right, #c4ffd5, #eee, #00c8ff);
+  opacity: 0.8;
+  background: linear-gradient(to bottom, #aa00ff, #7800b4, #630094);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
@@ -221,11 +227,13 @@ form input {
   transition: all linear 0.45s;
 }
 form input:focus {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color:#000024;
+  border-color: #aa00ff;
 }
 header.active form input {
   height: 25px;
   width: 140px;
+  border-color: #aa00ff;
 }
 
 .nav-list {
@@ -238,8 +246,11 @@ header.active form input {
   letter-spacing: 3px;
   margin-left: 32px;
 }
-li a {
+.nav-list li a {
   color: white;
+}
+.nav-list li a:hover{
+  border-bottom: 1px solid #b535f6;
 }
 .mobile-menu {
   display: none;
@@ -264,7 +275,7 @@ header.active .mobile-menu {
   right: 0;
   width: 35vw;
   height: 92vh;
-  background: var(--color-darkblue);
+  background: #02021c ;
   z-index: 1;
   box-shadow: 5px 4px 15px 1px var(--color-white);
   flex-direction: column;
@@ -296,6 +307,7 @@ header.active .mobile-menu {
 
 .mobile-menu.active .line1 {
   transform: rotate(-45deg) translate(-8px, 8px);
+  
 }
 
 .mobile-menu.active .line2 {
@@ -304,6 +316,7 @@ header.active .mobile-menu {
 
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
+  background-color: #aa00ff; 
 }
 
 main {
@@ -314,7 +327,7 @@ main {
 }
 .filmes {
   width: 250px;
-  background-color: var(--color-darkblue);
+  background-color: #02021c;
   margin: 20px 0px 0px 15px;
   border-radius: 6px;
   overflow: hidden;
@@ -322,7 +335,7 @@ main {
   transition: all linear 0.25s;
 }
 .filmes:hover {
-  box-shadow: 2px 2px rgba(255, 255, 255, 0.603);
+  border: solid 1px #380448;
 }
 .filmes img {
   width: 100%;
@@ -343,8 +356,8 @@ main {
   padding: 6px;
   margin-left: 35px;
   background-color: rgba(165, 165, 165, 0.329);
+  border: none;
   opacity: 0.5;
-  border: solid 1px black;
   border-radius: 4px;
 }
 .info-filmes span.verde {
@@ -366,7 +379,7 @@ main {
   display: none;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.418);
   position: fixed;
   top: 0;
   left: 0;
@@ -378,7 +391,7 @@ main {
   display: flex;
 }
 #modal-content {
-  background-color: var(--color-darkblue);
+  background-color: #010118 ;
   height: 70vh;
   width: 70vw;
   display: flex;
@@ -404,15 +417,15 @@ button#remove-modal {
 }
 
 button#remove-modal:hover {
-  background-color: var(--color-darkblue);
+  background-color: #aa00ff;
   border: solid 1px white;
   color: white;
   transform: scaleX(1.1);
-  transition: 0.6s;
+  transition: 0.4s;
   cursor: pointer;
 }
 button#remove-modal:active {
-  animation: 0s;
+  animation:0s;
   transform: scale(1.3);
   transform: scaleY(-0) scalex(8);
 }
@@ -426,6 +439,7 @@ button#remove-modal:active {
   margin-left: 10px;
 }
 #top h2#title {
+  color:white ;
   margin-bottom: 40px;
   font-size: 40px;
 }
@@ -436,7 +450,7 @@ button#remove-modal:active {
 /*
 @media screen and (min-width: 600px)  */
 footer {
-  border-top: 1px solid #2a232e;
+  border-top: 1px solid #b535f6;
   font-family: "Poppins", sans-serif;
   margin: 20px;
   margin-top: 120px;
@@ -447,14 +461,11 @@ footer li a {
 }
 footer li a:hover {
   transition: 0.03s ease-in;
-  border-bottom: 1px solid #c4ffd5c9;
+  border-bottom: 1px solid #b535f6;
   color: #ffffff;
 }
 footer ul li {
   margin-bottom: 25px;
-}
-footer ul li:hover {
-  color: red;
 }
 /* footer-commit*/
 li.contact-footer {
