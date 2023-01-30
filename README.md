@@ -1,8 +1,8 @@
-# Catálogo de Filmes
+# Catálogo de Filmes {API}
 
 ## 🎥Gif Projet:
 
-![img]()
+![img](https://github.com/joaorezend3/catalogo-filme-API-/blob/master/catalogo.gif)
 
 ## Sobre o projeto:
 
@@ -15,6 +15,14 @@ Este projeto tem como objetivo fornecer um catálogo de filmes atualizado, utili
 - Filtro de Busca: Os usuários podem filtrar a lista de filmes por nome.
 
 - Detalhes do Filme: Quando um filme é selecionado, é exibido um painel com mais informações sobre o filme, incluindo sinopse e qualidade.
+
+## Como visualizar em seu dispositivo:
+
+- Faça o clone do repositório
+
+  `git clone https://github.com/joaorezend3/catalogo-filme-API-JS.git` 
+
+- Abra o arquivo index.html em um navegador
 
 ## Códigos em Destaque
 
@@ -61,25 +69,14 @@ form.addEventListener("submit", function (e) {
 ```
 > O evento submit é adicionado ao formulário para fazer uma busca quando o usuário envia o formulário.
 
-
 ## Tecnologias Utilizadas:
 
 - HTML
 - CSS
 - JavaScript
 
- 
-## Como visualizar em seu dispositivo:
-
-- Faça o clone do repositório
-
-  `git clone https://github.com/joaorezend3/Pagina-de-streaming-clone-Netflix.git` 
-
-- Abra o arquivo index.html em um navegador
-
 ## Conclusão:
-
-O projeto foi uma boa oportunidade para trabalhar com posicionamento absoluto e outras funcionalidades do CSS para alinhar elementos. Além disso, foi possível simular uma página da Netflix utilizando HTML, CSS e JavaScript.
+O projeto foi uma boa oportunidade para trabalhar com uma API. feito em Dec 23, 2021 e atualizado em 30/01/2023
 
 ```javascript
 alert("Por gentileza, caso refaça o projeto, peça sua chave key no sit: https://www.themoviedb.org/
