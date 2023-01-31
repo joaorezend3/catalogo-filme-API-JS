@@ -6,7 +6,7 @@
 
 ## Sobre o projeto:
 
-Este projeto tem como objetivo fornecer um catálogo de filmes atualizado, utilizando a API pública da <a href="https://www.themoviedb.org/">The Movie DB.</a> O catálogo inclui informações como sinopse, qualidade e nota dos filmes.
+Este projeto tem como objetivo fornecer um catálogo de filmes atualizado, utilizando a `API` pública da <a href="https://www.themoviedb.org/">The Movie DB.</a> O catálogo inclui informações como sinopse, qualidade e nota dos filmes.
 
 ## Principais Características
 
@@ -33,7 +33,7 @@ const BUSCAAPI = "https://api.themoviedb.org/3/search/movie?&api_key=824ab9aa283
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 ```
-> A constante APIURL é a URL da API do The Movie Database (TMDB), que é usada para obter informações sobre filmes. A constante IMGPATH no código é a URL base usada para exibir imagens dos filmes. A constante BUSCAAPI é a URL da API de busca do TMDB. As constantes form, search, main, header, modal são variáveis que armazenam referências a elementos HTML.
+> A constante `APIURL` é a URL da API do The Movie Database (TMDB), que é usada para obter informações sobre filmes. A constante `IMGPATH` no código é a URL base usada para exibir imagens dos filmes. A constante `BUSCAAPI` é a URL da API de busca do TMDB. As constantes form, search, main, header, modal são variáveis que armazenam referências a elementos HTML.
 
 ```javascript
 buscarFilmes(APIURL);
@@ -43,7 +43,7 @@ async function buscarFilmes(url) {
   mostrarFilmes(respData.results);
 }
 ```
-> A função buscarFilmes usa a URL da API fornecida como argumento para obter informações sobre filmes e, em seguida, chama a função mostrarFilmes para exibir as informações na página.
+> A função `buscarFilmes` usa a URL da API fornecida como argumento para obter informações sobre filmes e, em seguida, chama a função `mostrarFilmes` para exibir as informações na página.
 
 ```javascript
 function avaliacao(avaliacao) {
@@ -56,7 +56,7 @@ function avaliacao(avaliacao) {
   }
 }
 ```
-> A função avaliacao é usada para determinar a cor de uma classificação baseada na nota do filme.
+> A função `avaliacao` é usada para determinar a cor de uma classificação baseada na nota do filme.
 ```javascript
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -79,7 +79,6 @@ form.addEventListener("submit", function (e) {
 O projeto foi uma boa oportunidade para trabalhar com uma API. feito em Dec 23, 2021 e atualizado em 30/01/2023
 
 ```javascript
-alert("Por gentileza, caso refaça o projeto, peça sua chave key no sit: https://www.themoviedb.org/
-caso queira somente utilizar ou visualizar o projeto não ha necessidades, obrigado😁");
+alert("Por gentileza, caso refaça o projeto, peça sua chave key no sit: https://www.themoviedb.org/ caso queira somente utilizar ou visualizar o projeto não ha necessidades, obrigado😁");
 ```
-Créditos: https://www.themoviedb.org/
+`Créditos:` https://www.themoviedb.org/
